@@ -2,7 +2,7 @@
 # Codificación de clases con métodos constructores, accesadores, mutadores y sobrecarga en Python.
 ## Descripción
 
-Se te ha solicitado desarrollar el algoritmo de la primera escena de su próximo juego “Gran Fantasía”.
+La startup Juegos por comida solicitó desarrollar el algoritmo de la primera escena de su próximo juego “Gran Fantasía”.
 El prototipo se desarrolla utilizando una aplicación de consola escrita en Python.
 Cuenta con un script principal que ejecuta el juego, y una clase que permite crear personajes,
 y es importada en el script principal. Las opciones de juego del usuario, así como el
