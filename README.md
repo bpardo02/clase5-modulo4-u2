@@ -1,4 +1,4 @@
-# startup “Juegos por comida” 
+# Startup “Juegos por comida” 
 # Codificación de clases con métodos constructores, accesadores, mutadores y sobrecarga en Python.
 ## Descripción
 
