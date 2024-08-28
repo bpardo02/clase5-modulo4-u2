@@ -12,7 +12,9 @@ Es un juego de texto interactivo donde los jugadores asumen el papel de un perso
 
 ## Características
 Sistema de Niveles y Experiencia: Los personajes ganan o pierden experiencia según el resultado de los combates, lo que afecta su nivel.
+
 Interacción Dinámica: Los jugadores toman decisiones estratégicas que influyen en el desarrollo del juego.
+
 Comparación de Personajes: Se implementan métodos para comparar la experiencia entre personajes y calcular probabilidades de ganar.
 
 ## Cómo Jugar
