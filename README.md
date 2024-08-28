@@ -326,6 +326,16 @@ Ahora
     opcion_orco = Personaje.mostrar_dialogo_opcion(probabilidad_ganar)
 ```
 
+
+### Se agrega el mensaje de salida cuando el jugador presiona la opcion de "Huir"
+```bash
+if opcion_orco == 2:
+    print(
+        "\n¡Has decidido huir del orco!\n"
+        "¡Hasta la próxima aventura!\n"
+    )
+ ```  
+
 Autor
 
 - [Vanessa Morales](https://github.com/vanemn)
