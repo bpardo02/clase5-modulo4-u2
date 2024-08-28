@@ -12,7 +12,9 @@ Es un juego de texto interactivo donde los jugadores asumen el papel de un perso
 
 ## Características
 Sistema de Niveles y Experiencia: Los personajes ganan o pierden experiencia según el resultado de los combates, lo que afecta su nivel.
+
 Interacción Dinámica: Los jugadores toman decisiones estratégicas que influyen en el desarrollo del juego.
+
 Comparación de Personajes: Se implementan métodos para comparar la experiencia entre personajes y calcular probabilidades de ganar.
 
 ## Cómo Jugar
@@ -20,16 +22,12 @@ Ejecuta el juego y proporciona el nombre de tu personaje.
 Enfréntate a un orco y elige entre atacar o huir.
 Observa cómo tus decisiones afectan la experiencia y el nivel de tu personaje
 
-El protopipo cuenta con dos archivos personaje.py y juego.py los cuales han sido provistos y se requiere
+El protopipo cuenta con dos archivos los cuales han sido provistos y se requiere
 realizar  correcciones para correcto funcionamiento.
 
-Las modificaciones fueron las siguietes:
-## 01 - personaje.py
+### 01 - personaje.py
 
-
-## 02 - juego.py
-
-
+### 02 - juego.py
 
 ## Prerrequisitos o Dependencias
 
