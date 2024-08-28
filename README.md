@@ -23,9 +23,9 @@ Observa cómo tus decisiones afectan la experiencia y el nivel de tu personaje
 El protopipo cuenta con dos archivos los cuales han sido provistos y se requiere
 realizar  correcciones para correcto funcionamiento.
 
-## 01 - personaje.py
+### 01 - personaje.py
 
-## 02 - juego.py
+### 02 - juego.py
 
 ## Prerrequisitos o Dependencias
 
