@@ -1,5 +1,5 @@
 class Personaje:
-   """  
+    """  
     Clase que representa un personaje en el juego de texto interactivo.  
 
     A través de esta clase, se gestionan las interacciones entre personajes y se   
@@ -44,7 +44,7 @@ class Personaje:
 
     @estado.setter
     def estado(self, exp):
-       """  
+        """  
         Actualiza la experiencia del personaje y ajusta el nivel si es necesario.  
 
         Este método se encarga de incrementar o decrementar la experiencia.   
