@@ -1,8 +1,14 @@
+"""  
+Este script implementa un juego simple llamado "Gran Fantasía",   
+donde el jugador crea un personaje y se enfrenta a un orco.   
+El juego calcula la probabilidad de ganar y permite al jugador   
+decidir si atacar o huir, mostrando los resultados de cada combate.  
+"""
 from personaje import Personaje # corregir importacion
 import random # Corregir importacion
 import os # importar os
 
-print("¡Bienvenido a Gran Realidad!")
+print("¡Bienvenido a Gran Fantasía!")
 nombre = input(
     "Por favor indique el nombre de su personaje:\n" # Cambiar orco por personaje
 )
