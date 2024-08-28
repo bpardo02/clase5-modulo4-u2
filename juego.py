@@ -47,10 +47,19 @@ while opcion_orco == 1:
         o.estado = 50 # Correccion numeros
         os.system("cls") # Limpiar pantalla
 
+    
     print(p.estado)
     print(o.estado) # Corregir print de estado
 
+   
     probabilidad_ganar = p.get_probabilidad_ganar(o) # Corregir llamado a metodo    
     opcion_orco = Personaje.mostrar_dialogo_opcion(probabilidad_ganar) # Corregir llamado a metodo
 
+    
+if opcion_orco == 2:
+    print(
+        "\n¡Has decidido huir del orco!\n"
+        "¡Hasta la próxima aventura!\n"
+    )
+   
     
