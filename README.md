@@ -54,6 +54,10 @@ Ingresar a la carpeta del proyecto:
 
 Al revisar el código entregado, este contenía una serie de errores que no permitían que el programa funcionara de forma optima al analizar se le hicieron las correcciones correspondiente para su correcto funcionamiento, a continuación se detallan las correcciones sugeridas.
 
+Se agregan docstrings faltantes al proyecto, por lo tanto el detalle informado esta realizado con el conteo de lineas del proyecto original 
+
+Se importa al archivo juego.py el modulo import os  para  poder limpiar la terminal donde el jugador ejecuta el juego para una mejor lectura.
+
 ### personaje.py 
 
 #### Linea 6: La experiencia inicial del personaje debe ser 0 (estaba indicada como 10)
@@ -208,6 +212,120 @@ Ahora
 ```bash
 from personaje import Personaje
 import random 
+```
+#### Linea 4: Se cambia nombre del juego.
+#### Linea 6: Se cambia nombre "orco" por "personaje"
+
+Antes 
+```bash
+print("¡Bienvenido a Gran Realidad!")
+nombre = input(
+    "Por favor indique el nombre de su orco:\n"
+)
+```
+Ahora 
+```bash
+print("¡Bienvenido a Gran Fantasía!")
+nombre = input(
+    "Por favor indique el nombre de su personaje:\n" 
+)
+```
+
+#### Linea 13: Se cambia nombre "Elfo" por "Orco"
+#### Linea 16-17: Se corrige llamado a metodo (o)
+#### Linea 20: Se corrige llamado a metodo como o.mostrar_dialogo_opcion
+Antes 
+```bash
+print(
+    "\n¡Oh no!, ¡Ha aparecido un Elfo!"
+)
+o = Personaje("Orco")
+probabilidad_ganar = p.get_probabilidad_ganar(
+    p
+)
+
+opcion_orco = Personaje.mostrar_dialogo_opcion(probabilidad_ganar)
+
+```
+Ahora 
+```bash
+print(
+    "\n¡Oh no!, ¡Ha aparecido un Orco!" 
+)
+o = Personaje("Orco")
+probabilidad_ganar = p.get_probabilidad_ganar(o) 
+
+opcion_orco = o.mostrar_dialogo_opcion(probabilidad_ganar) 
+```
+#### Linea 24: Cerrar String cambiar signo
+#### Linea 27: Se corrige condicion
+#### Linea 30,32,33,38,40.41: se cambian los numeros invertidos 
+#### Linea 44: Corregir print de estado
+
+Antes 
+```bash
+while opcion_orco == 1:
+    resultado = (
+        "G" if random.uniform(0, 1) > probabilidad_ganar else "P
+    )
+
+    if resultado == "P":
+        print(
+            "\n¡Le has ganado al orco, felicidades!\n"
+            "¡Recibirás 30 puntos de experiencia!\n"
+        )
+        p.estado = -30
+        o.estado = 50
+
+    else:
+        print(
+            "\n¡Oh no! ¡El orco te ha ganado!\n"
+            "¡Has perdido 50 puntos de experiencia!\n"
+        )
+        p.estado = 50
+        o.estado = -30
+
+    print(p.estado)
+    primt(o.estado)
+```
+Ahora 
+```bash
+while opcion_orco == 1:
+    resultado = (
+        "G" if random.uniform(0, 1) >= probabilidad_ganar else "P" )
+
+    if resultado == "G": 
+        print(
+            "\n¡Le has ganado al orco, felicidades!\n"
+            "¡Recibirás 50 puntos de experiencia!\n" )
+
+        p.estado = 50
+        o.estado = -30 
+        os.system("cls") 
+
+    else:
+        print(
+            "\n¡Oh no! ¡El orco te ha ganado!\n"
+            "¡Has perdido 30 puntos de experiencia!\n" 
+        )
+        p.estado = -30 
+        o.estado = 50 
+        os.system("cls") 
+
+    print(p.estado)
+    print(o.estado)
+```
+#### Linea 46,47: Se corrige llamado a metodo en ambos 
+Antes
+```bash
+    probabilidad_ganar = p.get_probabilidad_ganar(0)
+    opcion_orco = Personaje.mostrar_dialogo_opcion(provabilidad_ganar)
+```
+
+Ahora 
+```bash
+    probabilidad_ganar = p.get_probabilidad_ganar(o)  
+    opcion_orco = Personaje.mostrar_dialogo_opcion(probabilidad_ganar)
 ```
 
 Autor
